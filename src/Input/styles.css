@@ -1,0 +1,36 @@
+.MyInput__Label > div > div {
+  color: #fa8072;
+}
+
+.MyInput__Input {
+  padding: 15px 10px;
+  margin: 5px 0;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+}
+
+.MyInput__Input:hover {
+  box-shadow: 0 0 90px 10px #fffff0;
+}
+
+.MyInput__Input:focus {
+  box-shadow:
+    0 0 90px 10px #fffff0,
+    inset 0 0 15px rgb(41 41 25 / 50%);
+}
+
+.MyInput__Input.MyInput__Error {
+  caret-color: #fa8072;
+  color: #fa8072;
+}
+
+.MyInput__Input.MyInput__Error:hover {
+  box-shadow: 0 0 90px 10px #fa8072;
+}
+
+.MyInput__Input.MyInput__Error:focus {
+  box-shadow:
+    0 0 90px 10px #fa8072,
+    inset 0 0 15px rgb(250 126 112 / 50%);
+}

@@ -1,0 +1,40 @@
+.MyToggle__Wrapper {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.MyToggle__Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #fffff0;
+  border: 1px solid #242424;
+  outline: none;
+  overflow: hidden;
+}
+
+.MyToggle__Button:first-of-type {
+  border-radius: 8px 0 0 8px;
+}
+
+.MyToggle__Button:last-of-type {
+  border-radius: 0 8px 8px 0;
+}
+
+.MyToggle__Button:hover {
+  box-shadow: 0 0 50px 5px #fffff0;
+}
+
+.MyToggle__Button.MyToggle__Active {
+  box-shadow:
+    0 0 50px 5px #fffff0,
+    inset 0 0 15px rgb(41 41 25 / 50%);
+}
