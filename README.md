@@ -37,10 +37,10 @@ export class Input extends UiComponent {
     return (
       <label>
         {label}
- 		<input 
-  value={value} 
-  onChange={this.handleChange}
-/>
+          <input 
+            value={value} 
+            onChange={this.handleChange}
+          />
       </label>
     )
   }
@@ -49,7 +49,7 @@ export class Input extends UiComponent {
 
 ### Задачи:	
 
-## 1. Необходимо реализовать классовый компонент UiComponent, который будет предоставлять доступ к методам из объектов localeUtils и classNameUtils для всех компонентов, наследуемых от UiComponent. Каждый компонент, который будет наследоваться от UiComponent, будет иметь статическое свойство classes. В этом свойстве будет задан namespace. Методы из classNameUtils должны иметь доступ к этому статическому свойству, для корректной генерации наименований классов.
+#### 1. Необходимо реализовать классовый компонент `UiComponent`, который будет предоставлять доступ к методам из объектов `localeUtils` и `classNameUtils` для всех компонентов, наследуемых от `UiComponent`. Каждый компонент, который будет наследоваться от `UiComponent`, будет иметь статическое свойство `classes`. В этом свойстве будет задан namespace. Методы из `classNameUtils` должны иметь доступ к этому статическому свойству, для корректной генерации наименований классов.
 
 Например:
 
@@ -76,19 +76,19 @@ export class Input extends UiComponent {
 
     return (
       <label
-	    className={this.cx(‘Label’)}
- >
+	      className={this.cx(‘Label’)}
+      >
         {label || this.gettext(‘Поле ввода’)}
- 		<input 
-  value={value} 
-  onChange={this.handleChange}  
-  className={this.cx(‘Input’)}
-/>
+        <input 
+          value={value} 
+          onChange={this.handleChange}  
+          className={this.cx(‘Input’)}
+        />
       </label>
     )
   }
 }
 ```
 
-## 2. Покрыть компонент UiComponent типами с помощью TypeScript.
+#### 2. Покрыть компонент UiComponent типами с помощью TypeScript.
 
